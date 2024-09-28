@@ -11,7 +11,7 @@ boolean start = false;
 
 
 void setup() {
-  size(750, 750);
+  size(500, 500);
   strokeWeight(4);
   background(0, 0, 0);
 }
@@ -37,7 +37,7 @@ void draw() {
     fill(r, g, b);
     //lightning goes right
     if (random == 0) {
-      if (endX < 750) {
+      if (endX < 500) {
         endX = startX + ((int) (Math.random() * 20));
         endY = startY + ((int) (Math.random() * 80 - 40));
         line(startX, startY, endX, endY);
@@ -70,7 +70,7 @@ void draw() {
     }
     //lightning goes up
     else if (random == 3){
-      if (endY < 750) {
+      if (endY < 500) {
         endX = startX + ((int) (Math.random() * 80 - 40));
         endY = startY - ((int) (Math.random() * 20));
         line(startX, startY, endX, endY);
